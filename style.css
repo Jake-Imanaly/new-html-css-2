@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:wght@300&display=swap');
+body {
+    background: #929292;
+    
+    margin: 0em;
+    font-family: 'Poppins';
+}
+.navbar {
+    background-color: #f4f4f4;
+    padding: 2em;
+    
+
+    
+
+}
+    .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+
+nav{
+   display: none;
+}
+span{
+    color: #FF9900;
+}
+.container {
+    display: flex;
+    place-content: space-between;
+
+}
+.mobile_menu{
+    cursor:pointer;
+
+}
+a{
+    color: rgb(62, 61, 61);
+}
+ul{
+    list-style:circle;
+    margin: 0px;
+    padding: 0px;
+
+}
+section{
+    padding: 5em 2em;
+}
+.hero{
+    text-align: center;
+    
+
+}
+.subhead{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    letter-spacing: 0.5em;
+}
+h1{
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin-top: 0.3em;
+    text-align: center;
+}
+.primary-cta{
+    background-color:  #FF9900;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5em 1.3em;
+    font-size: 1.5;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+
+}
+.watch-video-cta{
+    display: block;
+    margin-top: 2em;
+}
+.features-section{
+    background-color: rgb(133, 133, 133);
+    margin: 0;
+    padding-left: 0.2em;
+}
+.hero-img{
+    width: 70%;
+    margin-top: 3em;
+    border-radius: 2em;
+   
+}
+
+li{
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    
+}
+.testers{
+    background-color: #b87e7e;
+   
+}
+.features-section img {
+    display: none;
+
+}
+.batman{
+    height: 5em;
+    width: 5em;
+    border:5 px #b87e7e;
+    border-radius: 50%;
+    margin-top: -4.5em ;
+
+}
+.testirs{
+    color: #ffffff;
+    background-color: rgb(32, 41, 41);
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin:0 auto 5em auto;
+    border-radius: 1em;
+}
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom:0.5em;
+}
+    input, textarea{
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        border: 1px solid gray;
+    }
+    input[type="submit"]{
+        background-color: #b87e7e;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.3em;
+        border: none;
+        margin-bottom: 5em;
+        border-radius: 5em;
+        cursor: pointer;
+    }
+    nav.menu-btn{
+        display: block;
+
+    }
+    nav{
+        position: fixed;
+        z-index: 999;
+        width: 66%;
+        right: 0;
+        top: 0;
+        background-color: black;
+        height: 100vh;
+        padding: 1em;
+    }
+
+    .current{
+        color: #000000;
+        text-decoration: none;
+        display:flexbox;
+        padding: 0.5em;
+        font-size: 1.5;
+        text-align: right;
+        font-weight: bold;
+        border-radius: 1em;
+
+    }
+    .mobile-menu-exit{
+        float:right;
+        margin: auto;
+        cursor: pointer;
+    }
+@media only screen and (min-width: 768px){
+    .mobile_menu, .mobile-menu-exit{
+        display: none;
+    }
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: 180px auto;
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;   
+}
+ul {
+    display: flex;
+}
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+     
+    }
+
+    .hero-img {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+    .primary-cta {
+        margin-right: 1em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 5em;
+
+      
+    }
+
+    .features-section {
+        position: relative;
+    }
+
+    .features-section img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+.point {
+    text-transform: uppercase;
+    font-weight: bold;
+}
